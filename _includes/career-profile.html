@@ -1,0 +1,28 @@
+{% assign career-profile = site.data.data.career-profile %}
+{% if career-profile %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ career-profile.title }}
+  </h2>
+
+  <div class="summary">
+    {{ career-profile.summary | markdownify }}
+  </div><!--//summary-->
+  {% if career-profile.image %}
+    <div class="summary-image"> 
+      <a href="{{ site.baseurl }}/assets/images/{{ career-profile.image }}" 
+         data-fancybox="gallery" 
+         data-caption="{{ career-profile.title }}">
+        <img src="{{ site.baseurl }}/assets/images/{{ career-profile.image }}" 
+             alt="{{ career-profile.title }}">
+      </a>
+    </div><!--//summary-image-->
+  {% endif %}
+    
+</section><!--//section-->
+{% endif %}

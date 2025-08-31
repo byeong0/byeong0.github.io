@@ -1,0 +1,36 @@
+{% assign skills = site.data.data.skills %} {% if skills %}
+<section class="skills-section section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ skills.title }}
+  </h2>
+
+  <div class="skillset">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for group in skills.categories %}
+        <tr>
+          <td>{{ group.category }}</td>
+          <td>
+            {% assign items = group.items | split: ', ' %}
+            {% for item in items %}
+              <span class="skillset-tag">{{ item | strip }}</span>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+<!--//skills-section-->
+{% endif %}

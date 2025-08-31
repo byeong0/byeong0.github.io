@@ -1,0 +1,68 @@
+{% assign projects = site.data.data.projects %}
+{% if projects %}
+<section class="section projects-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ projects.title }}
+  </h2>
+
+  {% if projects.intro %}
+  <div class="intro">
+      <p>{{ projects.intro }}</p>
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for assignment in projects.assignments %}
+  <div class="item">
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">
+          {% if assignment.link %}
+          <a href="{{ assignment.link }}" target="_blank">{{ assignment.title }}</a>
+          {% else %}
+          {{ assignment.title }}
+          {% endif %}
+        </h3>
+        <div class="time">{{ assignment.time }}</div>
+      </div><!--//upper-row-->
+
+      <div class="company">{{ assignment.company }}</div>
+
+    </div><!--//meta-->
+
+    {% if assignment.details %}
+    <div class="details">
+      {{ assignment.details | markdownify }}
+    </div><!--//details-->
+    {% endif %}
+
+    {% if assignment.images %}
+    <div class="summary-image">
+      {% for image in assignment.images %}
+      <a href="{{ site.baseurl }}/assets/images/{{ image }}" 
+         data-fancybox="gallery-{{ forloop.parentloop.index }}" 
+         data-caption="{{ assignment.title }}">
+        <img src="{{ site.baseurl }}/assets/images/{{ image }}" 
+             alt="{{ assignment.title }}">
+      </a>
+      {% endfor %}
+    </div><!--//images-->
+    {% endif %}
+    {% if assignment.skills %}
+    <div class="skills">
+      <div class="stack-title">📚 Stack : </div>
+      {% assign items = assignment.skills | split: ', ' %}
+      {% for item in items %}
+        <span class="skillset-tag">{{ item | strip }}</span>
+      {% endfor %}
+    </div><!--//skills-->
+    {% endif %}
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
