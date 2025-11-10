@@ -129,15 +129,32 @@ experiences:
 #     details: 
 
 projects:
+
   title: Projects
   intro: 
   assignments:
+  - title: Dealmind
+    time: 2025.08 ~ 현재
+    company: 삼정KPMG 회계법인
+    skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, Airflow
+    images: 
+      - projects/dealmind-aichat.jpg
+      - projects/dealmind-gtm1.jpg
+      - projects/dealmind-gtm2.jpg
+    link: #
+    details: | 
+      삼정KPMG 회계법인 딜(Deal) 본부에 사용하기 위한 M&A 이메일 AI 분석 데이터 및 AI Chat 개발
+        - 👨🏻‍💻 Role : 
+          - M&A 이메일 분석 데이터 파이프라인
+          - RAG 데이터 생성
+          - AI Chat
   - title: 삼정 AI Chat
     time: 2025.05 ~ 현재
     company: 삼정KPMG 회계법인
-    skills: Docker, Azure OpenAI, Ollama, MCP, LangChain, Svelte, FastAPI, Playwrite, SearXNG, Tika
+    skills: Docker, Azure OpenAI, Ollama, vLLM, MCP, LangChain, Svelte, FastAPI, Playwrite, SearXNG, Tika
     images: 
-      - projects/samsong-ai-chat.png
+      - projects/samjong-ai-chat1.png
+      - projects/samjong-ai-chat2.jpg
     link: #
     details: | 
       삼정KPMG 회계법인 전사에서 사용하기 위한 Private AI Chat 서비스 개발
