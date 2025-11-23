@@ -432,3 +432,8 @@ p {
   border-radius: 9999px;
   white-space: nowrap;
 }
+
+/* ======= Print URL ======= */
+.print-url {
+  display: none; /* Hidden by default, shown only in print/PDF */
+}

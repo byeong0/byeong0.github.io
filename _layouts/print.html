@@ -16,12 +16,40 @@
     .wrapper {
       max-width: unset !important;
     }
+    /* Print URL - visible in print/PDF */
+    .print-url {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      text-align: right !important;
+      padding: 5px 20px 10px 20px !important;
+      font-size: 8pt !important;
+      color: #666 !important;
+      border-bottom: 1px solid #e0e0e0 !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .print-url a {
+      color: #666 !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      font-weight: bold !important;
+    }
+    .print-url a:hover {
+      text-decoration: underline !important;
+    }
   </style>
   <body>
     <div class="wrapper">
       {% include sidebar.html %}
 
-      <div class="main-wrapper">{{ content }}</div>
+      <div class="main-wrapper">
+        <div class="print-url">
+          <a href="{{ site.url }}">{{ site.url }}</a>
+        </div>
+        {{ content }}
+      </div>
     </div>
     {% include scripts.html %}
   </body>
