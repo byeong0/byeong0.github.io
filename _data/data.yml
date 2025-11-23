@@ -65,8 +65,9 @@ career-profile:
   title: AI서비스 웹 백엔드 엔지니어
   summary: |
     - 딥러닝 모델을 활용한 AI서비스 시스템/어플리케이션 아키텍쳐 설계
-    - 데이터 파이프라인(ETL) 및 API 개발 및 운영
-    - 프론트 화면 개발
+    - 데이터 파이프라인(ETL) 개발 및 운영
+    - 프론프화면 개발 및 운영
+    - 백엔드 API  개발 및 운영
     - 툴체인 구축 및 DevOps 환경 구축
   image: drawio/career-profile.webp
 
@@ -93,10 +94,11 @@ experiences:
   title: Experiences
   info:
   - role: AI 서비스 개발
-    time: 2024.12 - 현재(9개월)
+    time: 2024.12 - 현재
     company: 삼정 KPMG 회계법인
     details: |
-        - AI 서비스 시스템 구축 및 운영
+        - AI 서비스 시스템 구축 및 개발/운영
+        - Audit, Deal  AI 툴 개발
   - role: AI 서비스 개발
     time: 2013.04 - 2024.09 (11년 6개월)
     company: SSG.COM(이마트 → 신세계페이먼츠 → SSG.COM)
@@ -136,18 +138,19 @@ projects:
   - title: Dealmind
     time: 2025.08 ~ 현재
     company: 삼정KPMG 회계법인
-    skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, Airflow
+    skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, Airflow, Power Automate
     images: 
       - projects/dealmind-aichat.jpg
       - projects/dealmind-gtm1.jpg
       - projects/dealmind-gtm2.jpg
-    link: #
+    link: https://www.fnnews.com/news/202511211500247313
     details: | 
       삼정KPMG 회계법인 딜(Deal) 본부에 사용하기 위한 M&A 이메일 AI 분석 데이터 및 AI Chat 개발
         - 👨🏻‍💻 Role : 
+          - 시스템 구축 및 S/W 아키텍처 설계
           - M&A 이메일 분석 데이터 파이프라인
           - RAG 데이터 생성
-          - AI Chat
+          - AI Chat 개발
   - title: 삼정 AI Chat
     time: 2025.05 ~ 현재
     company: 삼정KPMG 회계법인
