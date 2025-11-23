@@ -30,7 +30,7 @@ function generatePDF() {
         filename: filename,
         image: { 
           type: "jpeg", 
-          quality: 1
+          quality: 0.8
         },
         html2canvas: {
           scale: 2,
