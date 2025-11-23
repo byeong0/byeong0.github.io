@@ -28,17 +28,23 @@ function generatePDF() {
       const opt = {
         margin: 10,
         filename: filename,
-        image: { type: "jpeg", quality: 1 },
+        image: { 
+          type: "jpeg", 
+          quality: 1
+        },
         html2canvas: {
           scale: 2,
           useCORS: true,
           letterRendering: true,
           scrollY: 0,
+          logging: false,  // Disable logging for better performance
+          removeContainer: true,  // Clean up after rendering
         },
         jsPDF: {
           unit: "mm",
           format: "a4",
           orientation: "portrait",
+          compress: true,  // Enable PDF compression
         },
       };
 
