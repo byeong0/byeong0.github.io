@@ -138,7 +138,7 @@ projects:
   - title: Dealmind
     time: 2025.08 ~ 현재
     company: 삼정KPMG 회계법인
-    skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, Airflow, Power Automate
+    skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, ,Airflow, Power Automate
     images: 
       - projects/dealmind-aichat.jpg
       - projects/dealmind-gtm1.jpg
@@ -146,6 +146,9 @@ projects:
     link: https://www.fnnews.com/news/202511211500247313
     details: | 
       삼정KPMG 회계법인 딜(Deal) 본부에 사용하기 위한 M&A 이메일 AI 분석 데이터 및 AI Chat 개발
+        - 📊 성과 : 
+          - M&A 이메일 일일 1,000건 이상 자동 분석 처리
+          - RAG 데이터 60만 건 이상 문서 인덱싱
         - 👨🏻‍💻 Role : 
           - 시스템 구축 및 S/W 아키텍처 설계
           - M&A 이메일 분석 데이터 파이프라인
@@ -154,13 +157,18 @@ projects:
   - title: 삼정 AI Chat
     time: 2025.05 ~ 현재
     company: 삼정KPMG 회계법인
-    skills: Docker, Azure OpenAI, Ollama, vLLM, MCP, LangChain, Svelte, FastAPI, Playwrite, SearXNG, Tika
+    skills: Docker, Azure OpenAI, Ollama, vLLM, MCP, LangChain, Svelte, FastAPI, Playwrite, SearXNG, Milvus, Tika, Azure Document Intelligence
     images: 
       - projects/samjong-ai-chat1.png
       - projects/samjong-ai-chat2.jpg
     link: #
     details: | 
       삼정KPMG 회계법인 전사에서 사용하기 위한 Private AI Chat 서비스 개발
+        - 📊 성과 : 
+          - 전사 3,000명 이상 동시 사용자 지원
+          - 일일 1만건 이상 쿼리 처용
+          - 내부 문서를 외부 유출 없이 AI 활용
+          - 내부 문서를 자유롭게 지식검색에 활용
         - 👨🏻‍💻 Role : 
           - Open WebUI  UI/UX커스터마이징
           - Tika, SearXNG, Playwright, Ollama, SSO 연동
@@ -174,6 +182,9 @@ projects:
     link: https://kpmgdsh.com/solutions/auditsay
     details: | 
       AI 기반 감사업무 지원 서비스 개발
+        - 📊 성과 : 
+          - 검색 정확도 80% 이상
+          - 감사업무 기준서 및 사례 검색하기 위한 시간을 50%이상 절감
       - 👨🏻‍💻 Role : 
         - 데이터파이프라인 개발
         - RAG, LLM 프롬프트 개발
@@ -187,6 +198,9 @@ projects:
     link: https://kpmgdsh.com/solutions/smart reporting solution
     details: | 
       감사업무 푸팅(Footing) 지원 서비스 개발
+        - 📊 성과 : 
+          - 푸팅 작업 시간을 50%이상 절감 하며 크로스 체크 가능
+          - 푸팅 정확도 80% 이상
       - 화면 개발
       - 전자공시 보고서(dsd) 파서 개발
       - 자동합계, 전기숫자대사, FS/주석대사
@@ -200,12 +214,17 @@ projects:
       - projects/architecture/ssg_lens_v2.png
     link: https://it.chosun.com/news/articleView.html?idxno=2023092118383
     details: | 
-      언어로 정확히 표현 할 수 없는 패션 스타일(예. 하늘하늘한 블라우스)을 카메라 촬영이미지나 상품 이미지를 통해 유사한 상품을 찾아 주는 서비스
-        - 디텍션/클래시피케이션 모델 개선
-        - 상품의 속성 라벨 정보를 LLM을 이용해 고객 친화적인 문구로 가공
-        - 멀티모달 추가(이미지+텍스트 검색), RAG 추가
-        - 클릭기반 유사 이미지 상품 추천(AI Pick)
-        - 유사 브랜드 추천 추가(스타일 유사 + 가격대 그래프 생성)
+      언어로 정확히 표현 할 수 없는 패션 스타일(예. 하늘하늘한 블라우스)을 카메라 촬영이미지나 상품 이미지를 통해 유사한 상품을 찾아 주는 서비스
+        - 📊 성과 : 
+          - 1억개 이상 상품 이미지 인덱싱
+          - 일일 100만 건 이상 검색 쿼리 처리
+          - 유사 이미지 검색 정확도 80% 이상
+          - 유사 브랜드 추천 정확도 80% 이상
+        - 디텍션/클래시피케이션 모델 개선
+        - 상품의 속성 라벨 정보를 LLM을 이용해 고객 친화적인 문구로 가공
+        - 멀티모달 추가(이미지+텍스트 검색), RAG 추가
+        - 클릭기반 유사 이미지 상품 추천(AI Pick)
+        - 유사 브랜드 추천 추가(스타일 유사 + 가격대 그래프 생성)
         - 👨🏻‍💻 Role :  백엔드 개발 2명 중 메인 개발자
           - AI 서비스 파트 리더
           - 시스템/SW 아키텍처 설계
@@ -229,6 +248,9 @@ projects:
     details: | 
       - 상품 설명 이미지 내 존재하는 텍스트를 실시간으로 추출 후 LLM으로 가공된 텍스트를 시각장애인이 청취할 수 있도록 제공
       - 상품의 크기를 생수병과 같은 고객이 쉽게 파악 가능한 상품과 비교 가능하도록 상품 비교 이미지 생성
+        - 📊 성과 : 
+          - 일일 10만 건 이상 이미지 처리
+          - API 평균 응답 시간 5초 이하
         - 👨🏻‍💻 Role : 백엔드 개발 1명
           - 시스템/SW 아키텍처 설계
               - API Process Flow
@@ -245,6 +267,10 @@ projects:
     link: #
     details: | 
       카메라 촬영을 통해 신용/체크 카드번호와 유효기간을 자동으로 입력
+        - 📊 성과 : 
+          - 일일 10만 건 이상 카드 OCR 처리
+          - OCR 정확도 85% 이상
+          - 평균 응답 시간 0.3초 이하
       - 👨🏻‍💻 Role : 백엔드 개발 1명
         - 시스템/SW 아키텍처 설계
             - API Process Flow 설계
@@ -264,6 +290,9 @@ projects:
     link: #
     details: | 
       상품 이미지내 영양소, 축산물 가격/중량 정보 추출
+        - 📊 성과 : 
+          - 10만 개 이상 상품 이미지 배치 처리
+          - OCR 정확도 85% 이상
       - 👨🏻‍💻 Role : 백엔드 개발 1명
         - 시스템/SW 아키텍처 설계
         - ETL/API 개발
@@ -279,8 +308,12 @@ projects:
       - projects/architecture/guarantee.png
     link: #
     details: | 
-      수입 상품을 등록할 경우 “수입신고필증” 파일(PDF/이미지)을 업로드 후 [국가관세종합정보]
+      수입 상품을 등록할 경우 "수입신고필증" 파일(PDF/이미지)을 업로드 후 [국가관세종합정보]
       시스템에 등록된 정보와 동일한지 체크
+        - 📊 성과 : 
+          - 일일 1,000건 이상 수입신고필증 검증 처리
+          - 검증 정확도 90% 이상
+          - 검수 시간 90% 절감
       - 👨🏻‍💻 Role :
         - 시스템/SW 아키텍처 설계
         - DRF API 개발
@@ -297,6 +330,9 @@ projects:
     details: | 
       챗봇을 통해 주문, 배송, 교환, 반품 등에 관련한 문의를 해결할 수 있을 뿐만 아니라,
       카카오톡 채널과 삼성 채팅(RCS) 메시지의 외부 채널에서도 쇼핑 정보와 운세 등을 제공
+        - 📊 성과 : 
+          - 일일 1만 건 이상 대화 처리
+          - 자동 응답률 90% 이상
         - 👨🏻‍💻 Role : 백엔드 개발 2명 중 메인 개발자
           - 프로젝트 리딩
           - 시스템/SW 아키텍처 설계
@@ -327,6 +363,8 @@ projects:
         - 유해바코드 검색
         - 위험 이미지(예. 일장기) 체크
         - 불필요한 텍스트, 테두리 체크
+        - 📊 성과 : 
+          - 일일 100만 건 이상 상품 이미지 자동 검수
         - 👨🏻‍💻 Role : 백엔드 개발 2명 중 메인 개발자
             - 프로젝트 리딩
             - 시스템/SW 아키텍처 설계
@@ -347,6 +385,9 @@ projects:
     details: | 
       언어로 정확히 표현 할 수 없는 스타일(예. 하늘하늘하고 나른나른한 블라우스)의  
       카메라 촬영 이미지나 상품 이미지를 통해 유사한 상품을 찾아 주는 서비스
+        - 📊 성과 : 
+          - 1억개 이상 상품 이미지 인덱싱
+          - 일일 10만 건 이상 검색 쿼리 처리
       - 유사 이미지 검색, 상품 라벨링
       - 👨🏻‍💻 Role : 백엔드 2명 중 메인 개발자
           - 시스템/SW 아키텍처 설계
@@ -365,6 +406,10 @@ projects:
       - projects/ssg_4.jpeg
     link: https://www.ssg.com/
     details: | 
+      - 📊 성과 :
+        - 기존 이마트/신세계 이커머스 사이트를 통합
+        - 장바구니/프로모션 기능을 통합하여 사용자 편의성 증가
+        - 물류센터에 주문/배송 데이터 연동 시간 50%이상 단축
       - 👨🏻‍💻 Role
         - 2016.07 ~ 2017.08(1년) :
           - 주문/배송 정보를 자동화 물류센터에서 피킹/패킹/출하/배송할 수 있도록 배송지시 데이터 전송 및 자동화 설비 데이터 연동
