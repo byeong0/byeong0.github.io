@@ -1,0 +1,115 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="ai-sox-general" name="AI SOX General Architecture">
+    <mxGraphModel dx="1832" dy="1446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="Auditors / Control Owners / Administrators" vertex="1">
+          <mxGeometry height="60" width="400" x="600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="presentation" parent="1" style="swimlane;horizontal=1;startSize=32;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="Presentation Layer" vertex="1">
+          <mxGeometry height="120" width="1400" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="presentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9673a6;fontStyle=1;" value="Web Application&#xa;Dashboard &amp; Workflow UI" vertex="1">
+          <mxGeometry height="52" width="260" x="90" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="docviewer" parent="presentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9673a6;fontStyle=1;" value="Document Viewer&#xa;BBox &amp; Evidence Traceability" vertex="1">
+          <mxGeometry height="52" width="260" x="430" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="chatui" parent="presentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9673a6;fontStyle=1;" value="AI Assistant UI&#xa;Streaming &amp; References" vertex="1">
+          <mxGeometry height="52" width="260" x="770" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="presentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9673a6;fontStyle=1;" value="Administration UI&#xa;Users, Models, Knowledge" vertex="1">
+          <mxGeometry height="52" width="220" x="1110" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="application" parent="1" style="swimlane;horizontal=1;startSize=32;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Application &amp; Domain Services" vertex="1">
+          <mxGeometry height="180" width="1400" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;fontStyle=1;" value="API Gateway / Authentication / Authorization" vertex="1">
+          <mxGeometry height="38" width="1240" x="90" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rcm" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;" value="RCM &amp; Control Design" vertex="1">
+          <mxGeometry height="45" width="210" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sampling" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;" value="Population &amp; Sampling" vertex="1">
+          <mxGeometry height="45" width="210" x="330" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;" value="Evidence Processing" vertex="1">
+          <mxGeometry height="45" width="210" x="570" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="evaluation" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;" value="Control &amp; Deficiency Evaluation" vertex="1">
+          <mxGeometry height="45" width="250" x="810" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting" parent="application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;" value="Reporting &amp; Audit Trail" vertex="1">
+          <mxGeometry height="45" width="240" x="1090" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ai" parent="1" style="swimlane;horizontal=1;startSize=32;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="AI Orchestration Layer" vertex="1">
+          <mxGeometry height="210" width="900" x="100" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="docai" parent="ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8dc;strokeColor=#d6b656;fontStyle=1;" value="Document AI Pipeline&#xa;OCR + Layout + Structured Extraction" vertex="1">
+          <mxGeometry height="58" width="250" x="60" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="testengine" parent="ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8dc;strokeColor=#d6b656;fontStyle=1;" value="AI Test Engine&#xa;Rules, Comparison, Evaluation" vertex="1">
+          <mxGeometry height="58" width="250" x="340" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="agent" parent="ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8dc;strokeColor=#d6b656;fontStyle=1;" value="AI Agent Orchestration&#xa;Planning, Tools, Streaming" vertex="1">
+          <mxGeometry height="58" width="230" x="620" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="rag" parent="ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8dc;strokeColor=#d6b656;fontStyle=1;" value="RAG &amp; Hybrid Search&#xa;Vector + Keyword + Reranking" vertex="1">
+          <mxGeometry height="55" width="250" x="200" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="modelrouter" parent="ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8dc;strokeColor=#d6b656;fontStyle=1;" value="Model Router&#xa;Purpose-based Model Configuration" vertex="1">
+          <mxGeometry height="55" width="250" x="500" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="swimlane;horizontal=1;startSize=32;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="Data Layer" vertex="1">
+          <mxGeometry height="210" width="460" x="1040" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="relational" parent="data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#fce8e6;strokeColor=#b85450;" value="Relational Data&#xa;Controls, Samples, Results, Audit Logs" vertex="1">
+          <mxGeometry height="70" width="170" x="45" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="vector" parent="data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#fce8e6;strokeColor=#b85450;" value="Vector Knowledge Store&#xa;RCM &amp; Reference Documents" vertex="1">
+          <mxGeometry height="70" width="170" x="245" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="files" parent="data" style="shape=folder;whiteSpace=wrap;html=1;fillColor=#fce8e6;strokeColor=#b85450;verticalAlign=bottom;" value="Document / File Storage" vertex="1">
+          <mxGeometry height="45" width="170" x="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="infra" parent="1" style="swimlane;horizontal=1;startSize=32;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="External AI &amp; Platform Services" vertex="1">
+          <mxGeometry height="130" width="1400" x="100" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="ocrmodel" parent="infra" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#6c8ebf;" value="OCR / Vision Model" vertex="1">
+          <mxGeometry height="45" width="220" x="100" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="llm" parent="infra" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#6c8ebf;" value="LLM / Multimodal LLM" vertex="1">
+          <mxGeometry height="45" width="220" x="390" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="externalKnowledge" parent="infra" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#6c8ebf;" value="External Knowledge Services" vertex="1">
+          <mxGeometry height="45" width="240" x="680" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="runtime" parent="infra" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#6c8ebf;" value="Container Runtime / Reverse Proxy / Monitoring" vertex="1">
+          <mxGeometry height="45" width="310" x="990" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="presentation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="presentation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="application">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="application" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="application" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="infra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="infra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
