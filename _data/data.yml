@@ -138,7 +138,7 @@ projects:
     company: 삼정KPMG 회계법인
     skills: Next.js, TypeScript, Ant Design, Tailwind CSS, PostgreSQL, Playwright, vLLM, Azure Communication Services
     images: 
-      - projects/architecture/grr_architecture.svg
+      - projects/architecture/grr_architecture.png
       - projects/grr_1.jpeg
       - projects/grr_2.jpeg
     link: 
@@ -159,7 +159,7 @@ projects:
     company: 삼정KPMG 회계법인
     skills: FastAPI, LangChain, LangGraph, Next.js, pgvector, PaddleOCR-VL, vLLM, Qwen3.5
     images: 
-      - projects/architecture/ai-sox-architecture.svg
+      - projects/architecture/ai-sox-architecture.png
       - projects/aisox_1.jpeg
       - projects/aisox_2.jpeg
       - projects/aisox_3.jpeg
