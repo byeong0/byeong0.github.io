@@ -500,4 +500,4 @@ skills:
     items: Docker, Docker Swarm, Docker Compose, k8s, Traefik, Caddy, MinIO, Prometheus, Grafana, Elastic APM, Tika, SearXNG, Playwright, LibreOffice, Power Automate, GitHub Actions
 
   - category: Cloud
-    items: Azure (App Service · Communication Services · AI Services)
+    items: Azure App Service, Azure Communication Services, Azure AI Services

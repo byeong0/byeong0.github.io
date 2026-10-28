@@ -26,6 +26,38 @@
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
+
+  /* 기술 태그 표가 화면 폭을 넘지 않도록 고정 레이아웃 + 태그 줄바꿈 허용 */
+  .main-wrapper .skillset table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .main-wrapper .skillset th:first-child,
+  .main-wrapper .skillset td:first-child {
+    width: 84px;
+  }
+  .main-wrapper .skillset-tag {
+    white-space: normal;
+  }
+
+  /* 인쇄 버튼은 프로필을 가리지 않도록 하단 우측으로, PDF 버튼(캔버스 렌더링)은 모바일에서 숨김 */
+  body .print-button {
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  body .pdf-button {
+    display: none;
+  }
+}
+
+/* 화면이 좁을 때(스마트폰)만 제목 아래에 기간을 배치. 인쇄 폭(A4)은 767px 이하라도 기존 가로 배치 유지 */
+@media screen and (max-width: 767px) {
+  .main-wrapper .upper-row {
+    display: block;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

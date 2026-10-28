@@ -88,3 +88,27 @@
   }
 
 }
+
+/* 인쇄·PDF: 이미지와 제목이 쪽 경계에서 잘리지 않게 하고, 큰 이미지는 높이를 제한 */
+@media print {
+  .summary-image a,
+  .summary-image img {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .summary-image img {
+    max-height: 90mm;
+    width: auto;
+    max-width: 100%;
+  }
+  .section-title,
+  .job-title,
+  .upper-row {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .main-wrapper li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
