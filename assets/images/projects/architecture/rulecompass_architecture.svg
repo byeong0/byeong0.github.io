@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="background:#ffffff;font-family:'Helvetica Neue',Helvetica,'Apple SD Gothic Neo',Arial,sans-serif" xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img"
+     aria-label="RuleCompass 내규·외규 정합성 점검 시스템 아키텍처: 외부 규범 수집, PostgreSQL 저장, 2~4단계 LLM 점검 파이프라인, 관리 화면과 산출물">
+  <style>
+  .t { font-size: 16px; font-weight: 700; fill: #000; }
+  .b { font-size: 12.5px; fill: #000; }
+  .l { font-size: 12.5px; fill: #000; }
+  .box { stroke-width: 1.5; }
+  .arrow { stroke: #000; stroke-width: 2; fill: none; }  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- 외부 규범 데이터 소스 -->
+  <rect class="box" x="40" y="40" width="320" height="150" rx="14" fill="#f5f5f5" stroke="#666666"/>
+  <text class="t" x="200" y="68" text-anchor="middle">외부 규범 데이터 소스</text>
+  <text class="b" x="200" y="94" text-anchor="middle">국가법령정보 OPEN API (법제처)</text>
+  <text class="b" x="200" y="114" text-anchor="middle">법령 5,600 · 행정규칙 24,600 · 조문 74만 · 법령용어 14만</text>
+  <text class="b" x="200" y="134" text-anchor="middle">은행연합회 자율규제 (웹 크롤링)</text>
+  <text class="b" x="200" y="154" text-anchor="middle">내규 문서 업로드 (PDF / HWP / DOCX)</text>
+  <text class="b" x="200" y="174" text-anchor="middle">기타 규정 문서 업로드</text>
+
+  <!-- 1. 수집·구조화 -->
+  <rect class="box" x="40" y="270" width="320" height="170" rx="14" fill="#ffe6cc" stroke="#d79b00"/>
+  <text class="t" x="200" y="300" text-anchor="middle">1. 수집 · 구조화 (Celery Worker / Beat)</text>
+  <text class="b" x="200" y="328" text-anchor="middle">OPEN API 증분 동기화 · 법령 체계도 / 위임 / 인용 관계</text>
+  <text class="b" x="200" y="348" text-anchor="middle">문서 변환 (LibreOffice · PDF → Markdown)</text>
+  <text class="b" x="200" y="368" text-anchor="middle">조문 단위 분할 · 참조 조문 연결</text>
+  <text class="b" x="200" y="388" text-anchor="middle">조문 청크 임베딩 (39만 건)</text>
+  <text class="b" x="200" y="408" text-anchor="middle">수집 이력 · 실패 건 재시도 관리</text>
+
+  <!-- DB 원통 -->
+  <path class="box" d="M440,268 A110,18 0 0 0 660,268 L660,442 A110,18 0 0 1 440,442 Z" fill="#f8cecc" stroke="#b85450"/>
+  <ellipse class="box" cx="550" cy="268" rx="110" ry="18" fill="#f8cecc" stroke="#b85450"/>
+  <text class="t" x="550" y="312" text-anchor="middle">PostgreSQL 17</text>
+  <text class="b" x="550" y="338" text-anchor="middle">pgvector (HNSW) · mecab-ko 전문검색</text>
+  <text class="b" x="550" y="358" text-anchor="middle">법령 / 조문 / 체계도 / 법령용어</text>
+  <text class="b" x="550" y="378" text-anchor="middle">벡터 · 기준정보 (기관 지위 · 의무주체 · 업무분류)</text>
+  <text class="b" x="550" y="398" text-anchor="middle">점검 차수 · AI 판정 · 담당자 확정 이력</text>
+  <text class="b" x="550" y="418" text-anchor="middle">프롬프트 버전 · LLM 호출 로그</text>
+
+  <!-- Runtime / Deployment -->
+  <rect class="box" x="740" y="40" width="320" height="110" rx="14" fill="#edf4f7" stroke="#91aeba"/>
+  <text class="t" x="900" y="68" text-anchor="middle">Runtime / Deployment</text>
+  <text class="b" x="900" y="94" text-anchor="middle">Docker Compose: api · worker · beat · frontend</text>
+  <text class="b" x="900" y="114" text-anchor="middle">postgres (pgvector + mecab) · redis</text>
+  <text class="b" x="900" y="134" text-anchor="middle">폐쇄망 배포용 오프라인 번들 (이미지 + DB 덤프 + 소스)</text>
+
+  <!-- 파이프라인 2~4단계 -->
+  <rect class="box" x="740" y="200" width="320" height="100" rx="14" fill="#fff2cc" stroke="#d6b656"/>
+  <text class="t" x="900" y="230" text-anchor="middle">2. 점검 대상 외규 선정</text>
+  <text class="b" x="900" y="256" text-anchor="middle">상위 법령 → 하위 법령 · 행정규칙 전개</text>
+  <text class="b" x="900" y="276" text-anchor="middle">규정별 적용 여부 AI 판정 → 담당자 확정</text>
+
+  <rect class="box" x="740" y="335" width="320" height="100" rx="14" fill="#fff2cc" stroke="#d6b656"/>
+  <text class="t" x="900" y="365" text-anchor="middle">3. 요구사항 도출</text>
+  <text class="b" x="900" y="391" text-anchor="middle">조문별 의무사항 추출 → 적용 여부 판단</text>
+  <text class="b" x="900" y="411" text-anchor="middle">요구사항 임베딩 → 유사 조문 매핑 → 업무 분류</text>
+
+  <rect class="box" x="740" y="470" width="320" height="100" rx="14" fill="#fff2cc" stroke="#d6b656"/>
+  <text class="t" x="900" y="500" text-anchor="middle">4. 정합성 점검</text>
+  <text class="b" x="900" y="526" text-anchor="middle">참조 · 유사도 기반 내규 후보 조문 → 정합성 판정</text>
+  <text class="b" x="900" y="546" text-anchor="middle">반영 / 일부반영 / 미반영 / 확인필요 → 보고서</text>
+
+  <!-- LLM -->
+  <rect class="box" x="1180" y="200" width="200" height="370" rx="14" fill="#e6d0de" stroke="#9673a6"/>
+  <text class="t" x="1280" y="232" text-anchor="middle">LLM / Embedding</text>
+  <text class="b" x="1280" y="262" text-anchor="middle">vLLM (OpenAI 호환 API)</text>
+  <text class="b" x="1280" y="282" text-anchor="middle">Qwen3.5 (LLM)</text>
+  <text class="b" x="1280" y="302" text-anchor="middle">Qwen3-Embedding</text>
+  <text class="b" x="1280" y="340" text-anchor="middle">temperature 0 (재현성)</text>
+  <text class="b" x="1280" y="360" text-anchor="middle">JSON 구조화 출력</text>
+  <text class="b" x="1280" y="380" text-anchor="middle">동시 호출 제한 · 재시도 · 타임아웃</text>
+  <text class="b" x="1280" y="418" text-anchor="middle">LLM · 임베딩 프로필 관리</text>
+  <text class="b" x="1280" y="438" text-anchor="middle">프롬프트 DB 버전 관리</text>
+  <text class="b" x="1280" y="458" text-anchor="middle">호출 로그 보관 (근거 추적)</text>
+  <text class="b" x="1280" y="496" text-anchor="middle">배치 실행 · 체크포인트 재개</text>
+  <text class="b" x="1280" y="516" text-anchor="middle">일시정지 / 재개</text>
+  <text class="b" x="1280" y="536" text-anchor="middle">담당자 수정 내용 보존</text>
+
+  <!-- 사용자 -->
+  <rect class="box" x="40" y="620" width="320" height="140" rx="14" fill="#dae8fc" stroke="#6c8ebf"/>
+  <text class="t" x="200" y="650" text-anchor="middle">준법감시 · 감사 담당자</text>
+  <text class="b" x="200" y="678" text-anchor="middle">AI 판정 결과 검토 · 확정</text>
+  <text class="b" x="200" y="698" text-anchor="middle">판정 · 사유 수정 (건별 / 일괄)</text>
+  <text class="b" x="200" y="718" text-anchor="middle">근거 조문 · 참조 관계 추적</text>
+  <text class="b" x="200" y="738" text-anchor="middle">Excel · 보고서 열람</text>
+
+  <!-- 관리 화면 + API -->
+  <rect class="box" x="430" y="620" width="300" height="140" rx="14" fill="#e1f5e7" stroke="#82b366"/>
+  <text class="t" x="580" y="650" text-anchor="middle">관리 화면 + API</text>
+  <text class="b" x="580" y="678" text-anchor="middle">Next.js 14 · TanStack Table · React Flow</text>
+  <text class="b" x="580" y="698" text-anchor="middle">FastAPI · 작업 큐 (Redis / Celery)</text>
+  <text class="b" x="580" y="718" text-anchor="middle">목록 필터 · 정렬 · 서버 페이징</text>
+  <text class="b" x="580" y="738" text-anchor="middle">조문 검색 AI Agent (ReAct)</text>
+
+  <!-- 산출물 -->
+  <rect class="box" x="800" y="640" width="260" height="120" rx="14" fill="#d5e8d4" stroke="#82b366"/>
+  <text class="t" x="930" y="670" text-anchor="middle">산출물</text>
+  <text class="b" x="930" y="698" text-anchor="middle">정합성 점검 결과 보고서 (Word / PDF)</text>
+  <text class="b" x="930" y="718" text-anchor="middle">요구사항 · 판정 결과 Excel</text>
+  <text class="b" x="930" y="738" text-anchor="middle">판정 근거 · LLM 호출 로그</text>
+
+  <!-- 화살표 -->
+  <line class="arrow" x1="200" y1="190" x2="200" y2="270" marker-end="url(#arrow)"/>
+  <text class="l" x="212" y="236">수집 · 증분 동기화</text>
+
+  <line class="arrow" x1="360" y1="345" x2="440" y2="345" marker-end="url(#arrow)"/>
+  <text class="l" x="400" y="336" text-anchor="middle">저장</text>
+
+  <line class="arrow" x1="660" y1="385" x2="740" y2="385" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="l" x="700" y="375" text-anchor="middle">조회 / 저장</text>
+
+  <line class="arrow" x1="900" y1="150" x2="900" y2="200" marker-end="url(#arrow)"/>
+  <text class="l" x="910" y="181">실행</text>
+
+  <line class="arrow" x1="900" y1="300" x2="900" y2="335" marker-end="url(#arrow)"/>
+  <text class="l" x="910" y="323">확정된 외규 목록</text>
+
+  <line class="arrow" x1="900" y1="435" x2="900" y2="470" marker-end="url(#arrow)"/>
+  <text class="l" x="910" y="458">요구사항</text>
+
+  <line class="arrow" x1="1060" y1="250" x2="1180" y2="250" marker-end="url(#arrow)"/>
+  <text class="l" x="1120" y="241" text-anchor="middle">규정 요약 · 적용 판단</text>
+
+  <line class="arrow" x1="1060" y1="385" x2="1180" y2="385" marker-end="url(#arrow)"/>
+  <text class="l" x="1120" y="376" text-anchor="middle">요구사항 추출 · 판단</text>
+
+  <line class="arrow" x1="1060" y1="520" x2="1180" y2="520" marker-end="url(#arrow)"/>
+  <text class="l" x="1120" y="511" text-anchor="middle">정합성 판정</text>
+
+  <line class="arrow" x1="560" y1="620" x2="560" y2="460" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="l" x="550" y="545" text-anchor="end">조회 · 확정 · 수정</text>
+
+  <line class="arrow" x1="700" y1="620" x2="760" y2="570" marker-end="url(#arrow)"/>
+  <text class="l" x="770" y="606">파이프라인 실행</text>
+
+  <line class="arrow" x1="900" y1="570" x2="900" y2="640" marker-end="url(#arrow)"/>
+  <text class="l" x="910" y="610">보고서 · Excel 생성</text>
+
+  <line class="arrow" x1="360" y1="690" x2="430" y2="690" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="l" x="395" y="680" text-anchor="middle">사용</text>
+
+  <line class="arrow" x1="800" y1="720" x2="730" y2="720" marker-end="url(#arrow)"/>
+  <text class="l" x="765" y="711" text-anchor="middle">다운로드</text>
+</svg>
