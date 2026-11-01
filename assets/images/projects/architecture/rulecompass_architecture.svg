@@ -37,7 +37,7 @@
   <text class="t" x="550" y="312" text-anchor="middle">PostgreSQL 17</text>
   <text class="b" x="550" y="338" text-anchor="middle">pgvector (HNSW) · mecab-ko 전문검색</text>
   <text class="b" x="550" y="358" text-anchor="middle">법령 / 조문 / 체계도 / 법령용어</text>
-  <text class="b" x="550" y="378" text-anchor="middle">벡터 · 기준정보 (기관 지위 · 의무주체 · 업무분류)</text>
+  <text class="b" x="550" y="378" text-anchor="middle">기준정보 (기관 지위 · 의무주체 · 업무분류)</text>
   <text class="b" x="550" y="398" text-anchor="middle">점검 차수 · AI 판정 · 담당자 확정 이력</text>
   <text class="b" x="550" y="418" text-anchor="middle">프롬프트 버전 · LLM 호출 로그</text>
 

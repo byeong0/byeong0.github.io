@@ -23,6 +23,9 @@
         <h3 class="job-title">
           {% if assignment.link %}
           <a href="{{ assignment.link }}" target="_blank">{{ assignment.title }}</a>
+          {% if assignment.link_label %}
+          <a class="link-label" href="{{ assignment.link }}" target="_blank">{{ assignment.link_label }} ↗</a>
+          {% endif %}
           {% else %}
           {{ assignment.title }}
           {% endif %}

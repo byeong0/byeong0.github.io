@@ -3,7 +3,8 @@ sidebar:
   about: False
   education: True
 
-  name: ByeongYeong, Jeong
+  name: 정병영
+  name_en: ByeongYeong Jeong
   tagline: AI Backend Developer
   avatar: profile/profile.webp
 
@@ -13,25 +14,25 @@ sidebar:
   twitter: byeong0
 
 career-profile:
-  title: AI 서비스 · 웹 서비스 개발자
+  title: AI 서비스 백엔드 개발자 · 아키텍트
   summary: |
-    - 15년 이상의 개발 경력(AI 서비스 개발 10년 이상). 이커머스(SSG.COM)에서 이미지 검색·OCR·챗봇 등 AI 서비스를, 회계법인(삼정KPMG)에서 감사·규제 준수 AI 플랫폼을 설계·개발
-    - 딥러닝 모델(CV, OCR, LLM)을 활용한 AI 서비스 시스템/애플리케이션 아키텍처 설계
-    - LLM·RAG·AI Agent 기반 서비스 설계, AI 판정 결과를 담당자가 검토·확정하는 Human-in-the-Loop 구조 설계
-    - 데이터 파이프라인(ETL) 개발 및 운영
-    - 백엔드(Python · Django · FastAPI) 및 프론트엔드(Next.js) 개발 및 운영
-    - Docker Swarm/Compose 기반 배포, 폐쇄망 배포, ML/DevOps 환경 및 툴체인 구축
+    - 개발 경력 16년(AI 서비스 개발 약 9년). 이커머스(SSG.COM)에서 이미지 검색·OCR·챗봇 등 AI 서비스 8건, 회계법인(삼정KPMG)에서 감사·규제 준수·M&A 업무용 AI 서비스 8건을 설계·개발
+    - 대규모 AI 서비스 운영: 상품 이미지 1억 개 인덱싱·일 100만 건 검색(SSG.Lens), 일 100만 건 상품 이미지 자동 검수, 전사 3,000명 이상 대상 사내 Private AI Chat
+    - LLM·RAG·AI Agent·Document AI 서비스 설계, AI 판정 결과를 담당자가 검토·확정하는 Human-in-the-Loop 구조와 정답 데이터 기반 품질 평가 체계 구축
+    - 아키텍처 설계부터 백엔드(Python · FastAPI · Django)·프론트엔드(Next.js)·배포(Docker Swarm/Compose)까지 1인 풀스택으로 서비스 4건 구축
+    - 금융보안 석사·모바일 보안 특허 출원 2건, 폐쇄망 배포·Private LLM 등 보안 요구가 높은 환경의 AI 서비스 구축
+    - 데이터 파이프라인(ETL·배치) 개발 및 운영, ML/DevOps 환경과 툴체인 구축
   image: drawio/career-profile.webp
 
 education:
   title: Education
   info:
-  - degree: 금융보안 전공
+  - degree: 금융보안 전공 (석사)
     university: 아주대학교 대학원
-    time: 2009.3 - 2011.2
-  - degree: 컴퓨터 정보 전공
+    time: 2009.03 - 2011.02
+  - degree: 컴퓨터 정보 전공 (학사)
     university: 고려대학교(세종)
-    time: 2005.3 - 2009.2
+    time: 2005.03 - 2009.02
 
 experiences:
   title: Experiences
@@ -40,25 +41,28 @@ experiences:
     time: 2024.12 - 현재
     company: 삼정KPMG 회계법인
     details: |
-        - Audit · Deal 본부 AI 서비스 개발 및 운영
-        - 고객사 AI 서비스 PoC 및 구축
+        - Audit · Deal 본부와 고객사 대상 AI 서비스 8건 설계·개발 및 운영 (4건 1인 풀스택)
+        - 규제 준수 점검(RuleCompass), SOX 통제 테스트 자동화(AI SOX) 등 LLM·Document AI 플랫폼을 아키텍처 설계부터 배포(폐쇄망 포함)까지 담당
+        - 전사 3,000명 이상 대상 사내 Private AI Chat 구축 및 운영
+        - 고객사 AI 서비스 PoC 및 구축, 오픈 직전 정확도 이슈가 발생한 AI 검수 시스템에 투입되어 정식 오픈까지 안정화
   - role: AI 서비스 개발
     time: 2013.04 - 2024.09 (11년 6개월)
     company: SSG.COM(이마트 → 신세계페이먼츠 → SSG.COM)
     details: |
       - 온라인 사업부 법인 분리에 따른 관계사 전배
       - 2017.09 ~ 2024.09 (7년) :
-          - 신세계페이먼츠 > SSG.COM > AI 팀 : AI 서비스 개발(이미지 검색, 챗봇, 카드 OCR, RPA 등)
+          - 신세계페이먼츠 > SSG.COM > AI 팀 : 이미지 검색·상품 이미지 자동 검수·챗봇·OCR·RPA 등 AI 서비스 아키텍처 설계 및 백엔드 개발
+          - AI 서비스 파트 리더, 프로젝트 리딩 2건(상품 이미지 자동 검수, 챗봇)
       - 2016.01 ~ 2017.08 (1년 7개월) :
           - 이마트 > 신세계페이먼츠 > 물류개발팀 : 자동화 물류센터 배송지시/실적 데이터 연동
       - 2013.04 ~ 2016.01 (2년 9개월) :
           - 이마트(주) > 주문결제팀 : 주문/결제/장바구니/프로모션 개발
-  - role: 암호화 모듈 개발
+  - role: 암호화 모듈 · 웹 개발
     time: 2010.06 - 2013.04 (2년 10개월)
     company: 바이너리소프트
     details: |
-      - 2011.05 ~ 2013.04 : 웹 개발
-      - 2010.06 ~ 2011.05 : 기술연구소 PKCS 암호화 모듈 개발
+      - 2011.05 ~ 2013.04 : 공공·유통 웹 서비스 개발(기상청, 근로복지공단, 롯데마트)
+      - 2010.06 ~ 2011.05 : 기술연구소 PKCS 암호화 모듈 개발, 모바일 보안 특허 출원 2건
 
 projects:
   title: Projects
@@ -78,7 +82,7 @@ projects:
           - 국가법령정보 OPEN API 기반으로 법령 5,600여 건·행정규칙 24,600여 건(조문 74만 건)을 조문 단위로 구조화하고 증분 동기화 체계 구축
           - 조문 청크 39만 건을 임베딩해 형태소 분석과 벡터 검색을 결합한 하이브리드 조문 검색 구현(PostgreSQL + pgvector)
           - 내규 문서(PDF/HWP)를 자동 변환·조문 분할하고 외규 인용·위임 관계를 자동 연결
-          - 점검 대상 선정 → 요구사항 도출 → 정합성 판정으로 이어지는 AI 점검 파이프라인을 화면에서 버튼 하나로 실행, 조문 13만 건·LLM 호출 15만 회 규모 배치를 체크포인트 기반으로 중단 없이 처리
+          - 점검 대상 선정 → 요구사항 도출 → 정합성 판정으로 이어지는 AI 점검 파이프라인을 화면에서 버튼 하나로 실행, 조문 13만 건·LLM 호출 15만 회 규모 배치를 체크포인트 기반 재개로 안정적으로 처리
           - AI 판정은 후보로 제시하고 담당자가 검토·확정하는 Human-in-the-Loop 구조, 프롬프트 버전과 LLM 호출 로그를 보관해 판정 근거 추적
           - 정합성 점검 결과 보고서(Word/PDF) 자동 생성, 요구사항·판정 결과 Excel 다운로드, ReAct 기반 조문 검색 AI Agent 제공
           - 폐쇄망 환경 배포를 위한 오프라인 설치 번들(컨테이너 이미지·DB 덤프·소스) 생성/복원 절차 구축
@@ -89,7 +93,7 @@ projects:
           - FastAPI 백엔드 API, Celery 기반 배치 실행, Next.js 업무 화면(목록 필터/정렬, 담당자 확정·수정, Excel) 개발
           - 보고서 생성(python-docx, matplotlib) 및 조문 검색 AI Agent 개발
           - Docker Compose 배포 구성 및 폐쇄망 오프라인 번들 구축
-  - title: GRR(Geographic Risk Rating)
+  - title: GRR(Geographic Risk Rating) 국가위험평가 시스템
     time: 2026.04 ~ 현재
     company: 삼정KPMG 회계법인
     skills: Next.js, React, TypeScript, Ant Design, Tailwind CSS, PostgreSQL, Playwright, Cheerio, ExcelJS, vLLM, Azure OpenAI, Azure Communication Services
@@ -98,9 +102,9 @@ projects:
       - projects/grr_1.jpeg
       - projects/grr_2.jpeg
     details: |
-      국가위험평가 업무를 위한 국가별 Risk Dataset 자동 수집, 표준화, 보정, 대시보드, Excel 산출 및 이메일 발송 웹 서비스 개발
+      자금세탁방지(AML) 국가위험평가 업무를 위해 국가별 위험 데이터셋을 자동 수집·표준화하고, 위험 등급 산정·보정부터 대시보드, Excel 산출, 이메일 발송까지 자동화한 웹 서비스 개발
         - 📊 성과 :
-          - FATF, EU, INCSR, FinCEN, OFAC, UN, OECD, World Bank 등 20개 국가위험 데이터셋 통합 관리
+          - FATF, EU, INCSR, FinCEN, OFAC, UN, OECD, World Bank 등 20개 국가위험 데이터셋 수집·통합 관리
           - ISO 3166 국가 마스터/alias 기반 국가명 매칭, LLM 기반 미매핑 국가 ISO 코드 추천 및 보정 프로세스 구축
           - FATF 상호평가(R.1~R.40) 점수 설정과 FinCEN finding 국가/기관 매핑 관리 기능 제공
           - GRR Final Results 산정, N/A 국가 제외 관리, 국가위험 지도/대시보드 제공
@@ -111,7 +115,7 @@ projects:
           - Playwright/Cheerio/pdf-parse 기반 크롤러 개발
           - ExcelJS 기반 개별/전체 Excel export 및 이메일 발송 기능 개발
           - 가입 승인·프로필 관리, 계정/IP 기준 로그인 실패 제한 등 사용자 인증 기능 개발
-  - title: AI SOX
+  - title: AI SOX(내부회계관리 통제 테스트 자동화 플랫폼)
     time: 2026.02 ~ 현재
     company: 삼정KPMG 회계법인
     skills: FastAPI, LangChain, LangGraph, Next.js, pgvector, PaddleOCR-VL, vLLM, Qwen3.5
@@ -121,9 +125,9 @@ projects:
       - projects/aisox_2.jpeg
       - projects/aisox_3.jpeg
     details: |
-      생성형 AI와 Document AI를 활용해 증빙 문서를 구조화하고, SOX 통제 테스트의 설계평가부터 운영평가·미비점 관리·보고서 생성까지 자동화한 감사 업무 플랫폼
+      생성형 AI와 Document AI로 증빙 문서를 구조화하고, SOX(내부회계관리제도) 통제 테스트의 설계평가부터 운영평가·미비점 관리·보고서 생성까지 자동화한 감사 업무 플랫폼
         - 📊 성과 :
-          - RCM 등록부터 증빙 검토, AI 통제 테스트, 미비점 평가 및 보고서 생성까지 SOX 테스트 전 과정을 하나의 플랫폼으로 통합
+          - RCM(위험·통제 매트릭스) 등록부터 증빙 검토, AI 통제 테스트, 미비점 평가 및 보고서 생성까지 SOX 테스트 전 과정을 하나의 플랫폼으로 통합
           - OCR과 멀티모달 LLM을 결합해 PDF/이미지 증빙에서 텍스트, 표, Key-Value 및 위치 좌표를 구조화하고 근거 원문을 함께 추적할 수 있도록 구현
           - 통제 절차와 증빙 분석 결과를 기반으로 테스트 규칙 생성, 설계평가, 통제 수행 결과 판정 및 개선 의견 생성을 자동화
           - RCM 및 감사 기준 문서를 임베딩한 하이브리드 검색과 Tool Calling 기반 AI Agent를 구축해 답변 근거와 참조 문서를 제공
@@ -142,7 +146,7 @@ projects:
     images:
       - projects/architecture/samyang_architecture.png
     details: |
-      식품 패키징 제작 과정에서 표시사항 의뢰서(문서)와 디자인 도안(고해상도 이미지) 간 텍스트·표기 일치 여부를 멀티모달 AI로 검수하는 시스템. 오픈을 앞두고 판별 정확도 이슈가 발생해 기술 검토 및 개선을 위해 프로젝트 중간 투입되어 정확도 개선과 안정화를 담당
+      식품 패키징 제작 과정에서 표시사항 의뢰서(문서)와 디자인 도안(고해상도 이미지) 간 텍스트·표기 일치 여부를 멀티모달 AI로 검수하는 시스템. 오픈 직전 판별 정확도 이슈를 해결하기 위해 프로젝트 중간에 투입되어 정확도 개선과 안정화를 담당
         - 📊 성과 :
           - 서식 검수 → 의뢰서·도안 일치검사 → 시안 간 차이 식별로 이어지는 3단계 검수 파이프라인 정비
           - 도안의 OCR 오인식·텍스트 파편화를 레이아웃 블록 그루핑과 도메인 정규화 사전(단위·특수기호·다국어 Unicode 표기·원재료명 오타 패턴) 전후처리로 보정하고, GPT-5 기반 문맥 매핑으로 판별 정확도 개선
@@ -155,26 +159,26 @@ projects:
           - 신뢰도 기반 자동 승인/검수자 에스컬레이션 판정 로직과 백엔드 API 구조 정비
           - 품질 평가 체계(정답 데이터·테스트셋·평가 지표) 수립 및 개선 전후 비교 검증
           - 대용량 도안 전처리와 다중 AI 모델 호출 병목 해소를 위한 비동기 처리 구조 적용
-  - title: Dealmind
+  - title: Dealmind(M&A 딜 소싱 이메일 AI 분석)
     time: 2025.08 ~ 현재
     company: 삼정KPMG 회계법인
     skills: Docker, Azure OpenAI, LangChain, Next.js, FastAPI, SearXNG, Airflow, Power Automate
     images:
+      - projects/architecture/dealmind_architecture.png
       - projects/dealmind-aichat.jpg
-      - projects/dealmind-gtm1.jpg
-      - projects/dealmind-gtm2.jpg
     link: https://www.fnnews.com/news/202511211500247313
+    link_label: 언론 보도
     details: |
-      딜(Deal) 본부의 M&A 업무를 위한 이메일 AI 분석 데이터 파이프라인 및 AI Chat 개발
+      딜(Deal) 본부의 M&A 업무를 위해 매물 소개 이메일을 AI로 분석하는 데이터 파이프라인과, 분석된 딜 정보를 검색·질의하는 AI Chat 개발
         - 📊 성과 :
-          - M&A 관련 이메일 일 1,000건 이상 자동 분석
+          - M&A 관련 이메일 일 1,000건 이상 자동 분석(매수/매도 분류, 대상 기업·산업·희망가 등 핵심 정보 추출)
           - RAG용 문서 60만 건 이상 인덱싱
         - 👨🏻‍💻 Role : 백엔드 개발 /2명
           - 시스템 구축 및 소프트웨어 아키텍처 설계
           - M&A 이메일 분석 데이터 파이프라인 개발
           - RAG 데이터 생성
           - AI Chat 개발
-  - title: 삼정 AI Chat
+  - title: 삼정 AI Chat(사내 Private LLM 서비스)
     time: 2025.05 ~ 현재
     company: 삼정KPMG 회계법인
     skills: Docker, Azure OpenAI, Ollama, vLLM, MCP, LangChain, Svelte, FastAPI, Playwright, SearXNG, Milvus, Tika, Azure Document Intelligence
@@ -198,8 +202,9 @@ projects:
     images:
       - projects/auditsay_plus.jpeg
     link: https://kpmgdsh.com/solutions/auditsay
+    link_label: 서비스 소개
     details: |
-      AI 기반 감사 업무 지원 서비스 개발
+      회계·감사 기준서와 사례를 검색해 근거와 함께 답변하는 AI 감사 업무 지원 서비스(RAG) 개발
         - 📊 성과 :
           - 검색 정확도 80% 이상
           - 감사 기준서·사례 검색 시간 50% 이상 절감
@@ -214,36 +219,39 @@ projects:
     images:
       - projects/sft.jpeg
     link: https://kpmgdsh.com/solutions/smart%20reporting%20solution
+    link_label: 서비스 소개
     details: |
-      감사 업무 푸팅(Footing) 지원 서비스 개발
+      감사 대상 재무제표·주석의 숫자 검증(Footing: 합계 검증, 전기 금액 대사, 재무제표·주석 대사)을 자동화한 감사 지원 서비스 개발
         - 📊 성과 :
           - 푸팅 작업 시간 80% 이상 절감 및 교차 검증 지원
           - 푸팅 정확도 80% 이상
         - 👨🏻‍💻 Role : 백엔드 및 프론트 개발 /2명
           - 화면 개발
           - 전자공시 보고서(DSD) 파서 개발
-          - 자동 합계, 전기 숫자 대사, FS/주석 대사
+          - 자동 합계 검증, 전기 금액 대사, 재무제표(FS)·주석 대사
           - 버전 비교, 결과 보고서 출력
-  - title: SSG.Lens v2 X 이미지/브랜드 추천 데이터 생성
+  - title: SSG.Lens v2(멀티모달 이미지 검색 · 브랜드 추천)
     time: 2024.01 ~ 2024.06
     company: SSG.COM
-    skills: Docker, Swarm, Azure, Python, Django, Redis, ELK, MySQL, faiss(knn), Spring, Oracle, Kafka, Milvus, Memgraph
+    skills: Docker, Swarm, Azure, Python, Django, Django Ninja, Celery, Airflow, Redis, ELK, PostgreSQL, MySQL, faiss(knn), Milvus, Memgraph, Kafka, Spring, Oracle
     images:
       - projects/ssg_lens_v2.jpg
       - projects/architecture/ssg_lens_v2.png
     link: https://it.chosun.com/news/articleView.html?idxno=2023092118383
+    link_label: 언론 보도
     details: |
-      언어로 정확히 표현하기 어려운 패션 스타일(예: 하늘하늘한 블라우스)을 카메라 촬영 이미지나 상품 이미지로 검색해 유사 상품을 찾아주는 서비스
+      이미지 검색 서비스(SSG.Lens)를 고도화해 멀티모달(이미지+텍스트) 검색, 클릭 기반 유사 상품 추천, 유사 브랜드 추천을 추가하고 상품 속성 정보를 LLM으로 고객 친화적인 문구로 가공
         - 📊 성과 :
           - 1억 개 이상 상품 이미지 인덱싱
           - 일 100만 건 이상 검색 쿼리 처리
           - 유사 이미지 검색 정확도 80% 이상
           - 유사 브랜드 추천 정확도 80% 이상
-        - 디텍션/클래시피케이션 모델 개선
-        - 상품 속성 라벨 정보를 LLM으로 고객 친화적인 문구로 가공
-        - 멀티모달(이미지+텍스트) 검색 및 RAG 추가
-        - 클릭 기반 유사 이미지 상품 추천(AI Pick)
-        - 유사 브랜드 추천 추가(스타일 유사도 + 가격대 그래프 생성)
+        - 🧩 주요 개선 :
+          - 디텍션/클래시피케이션 모델 개선
+          - 상품 속성 라벨 정보를 LLM으로 고객 친화적인 문구로 가공
+          - 멀티모달(이미지+텍스트) 검색 및 RAG 추가
+          - 클릭 기반 유사 이미지 상품 추천(AI Pick)
+          - 유사 브랜드 추천 추가(스타일 유사도 + 가격대 그래프 생성)
         - 👨🏻‍💻 Role : 백엔드 개발 /2명
           - AI 서비스 파트 리더
           - 시스템/SW 아키텍처 설계
@@ -264,18 +272,18 @@ projects:
       - projects/img_size.jpeg
       - projects/architecture/img_size.png
     link: https://www.joongang.co.kr/article/25158976
+    link_label: 언론 보도
     details: |
-      - 상품 설명 이미지 속 텍스트를 실시간으로 추출하고 LLM으로 가공해 시각장애인이 음성으로 들을 수 있도록 제공
-      - 상품 크기를 생수병처럼 익숙한 물건과 비교할 수 있는 크기 비교 이미지 생성
+      상품 설명 이미지 속 텍스트를 실시간으로 추출하고 LLM으로 가공해 시각장애인이 음성으로 들을 수 있도록 제공하고, 상품 크기를 생수병처럼 익숙한 물건과 비교할 수 있는 크기 비교 이미지를 생성하는 API 개발
         - 📊 성과 :
           - 일 10만 건 이상 이미지 처리
           - API 평균 응답 시간 5초 이하
         - 👨🏻‍💻 Role : 백엔드 개발 /1명
           - 시스템/SW 아키텍처 설계
-              - API Process Flow 설계
+            - API Process Flow 설계
           - API 개발
-              - Django Ninja API 개발
-              - Celery 추론 개발
+            - Django Ninja API 개발
+            - Celery 추론 개발
   - title: 신용카드 OCR
     time: 2022.06 ~ 2022.12
     company: SSG.COM
@@ -284,19 +292,19 @@ projects:
       - projects/card_ocr.jpeg
       - projects/architecture/card_ocr.png
     details: |
-      카메라 촬영만으로 신용/체크카드 번호와 유효기간을 자동 입력
+      카메라 촬영만으로 신용/체크카드 번호와 유효기간을 인식해 결제 수단 등록 시 자동 입력
         - 📊 성과 :
           - 일 10만 건 이상 카드 OCR 처리
           - OCR 정확도 85% 이상
           - 평균 응답 시간 0.3초 이하
         - 👨🏻‍💻 Role : 백엔드 개발 /1명
           - 시스템/SW 아키텍처 설계
-              - API Process Flow 설계
+            - API Process Flow 설계
           - API 개발
-              - JavaScript 클라이언트 라이브러리 개발
-              - Django Channels WebSocket 이미지 전송 개발
-              - JavaScript ↔ Django Channels 간 E2E 암호화
-              - Celery 추론 개발
+            - JavaScript 클라이언트 라이브러리 개발
+            - Django Channels WebSocket 이미지 전송 개발
+            - JavaScript ↔ Django Channels 간 E2E 암호화
+            - Celery 추론 개발
   - title: 영양소/축산물 OCR
     time: 2021.09 ~ 2021.12
     company: SSG.COM
@@ -305,17 +313,17 @@ projects:
       - projects/nutrient.jpeg
       - projects/architecture/nutrient.png
     details: |
-      상품 이미지 내 영양성분, 축산물 가격/중량 정보 추출
+      상품 이미지에서 영양성분과 축산물 가격/중량 정보를 추출하고 표시 위반 정보를 검출하는 배치 시스템 개발
         - 📊 성과 :
           - 10만 개 이상 상품 이미지 배치 처리
           - OCR 정확도 85% 이상
         - 👨🏻‍💻 Role : 백엔드 개발 /1명
           - 시스템/SW 아키텍처 설계
-              - API Process Flow 설계
+            - API Process Flow 설계
           - ETL/API 개발
-              - 영양성분/축산물 추론 배치 개발
+            - 영양성분/축산물 추론 배치 개발
           - 관리자 화면 개발
-  - title: 개런티 OCR
+  - title: 수입신고필증 OCR 검증(개런티 OCR)
     time: 2021.03 ~ 2021.08
     company: SSG.COM
     skills: Docker, Swarm, Python, Django, Redis, Celery, PostgreSQL, MongoDB
@@ -331,7 +339,7 @@ projects:
         - 👨🏻‍💻 Role : 백엔드 개발 /1명
           - 시스템/SW 아키텍처 설계
           - DRF API 개발
-              - 실시간 Celery 메시지 큐 기반 추론 개발
+            - 실시간 Celery 메시지 큐 기반 추론 개발
   - title: SSG.ShoppingBot, 고객센터 봇 v2
     time: 2019.09 ~ 2021.02
     company: SSG.COM
@@ -348,17 +356,17 @@ projects:
         - 👨🏻‍💻 Role : 백엔드 개발 /2명
           - 프로젝트 리딩
           - 시스템/SW 아키텍처 설계
-              - 빌더/API Flow 설계
+            - 빌더/API Flow 설계
           - API 개발
-              - DRF API 개발
+            - DRF API 개발
           - 데이터 연동 및 생성
-              - Airflow DAG 개발
-              - Kafka 연동
+            - Airflow DAG 개발
+            - Kafka 연동
           - 챗봇 빌더 및 관리자 화면 개발
-              - Spring Framework
-              - jQuery
+            - Spring Framework
+            - jQuery
           - 학습 데이터 생성/정제
-  - title: SSG.OCR + RMS
+  - title: SSG.OCR + RMS(상품 이미지 자동 검수)
     time: 2018.07 ~ 2019.02
     company: SSG.COM
     skills: Docker, Swarm, Azure, Python, Django, Celery, Redis, ELK, PostgreSQL, Spring, Oracle
@@ -366,20 +374,22 @@ projects:
       - projects/rms.jpeg
       - projects/architecture/rms.png
     link: https://www.etnews.com/20190711000090
+    link_label: 언론 보도
     details: |
       상품 이미지의 품질과 이미지 내 텍스트의 위반 항목을 자동 검수 (상품 이미지 변경 → 이미지·정보 분석 → 위반 검수 → 위반 항목 처리 요청)
-        - 이미지 미존재/단색/품질/크기 비율 체크
-        - 금칙어 검색
-        - 원산지/제조국/안전인증번호 체크
-        - 유해 바코드 검색
-        - 위험 이미지(예: 일장기) 체크
-        - 불필요한 텍스트, 테두리 체크
+        - 🧩 검수 항목 :
+          - 이미지 미존재/단색/품질/크기 비율 체크
+          - 금칙어 검색
+          - 원산지/제조국/안전인증번호 체크
+          - 유해 바코드 검색
+          - 유해·금지 이미지(금지 문양 등) 체크
+          - 불필요한 텍스트, 테두리 체크
         - 📊 성과 :
           - 일 100만 건 이상 상품 이미지 자동 검수
         - 👨🏻‍💻 Role : 백엔드 개발 /2명
           - 프로젝트 리딩
           - 시스템/SW 아키텍처 설계
-              - Docker Swarm 기반 메시지 큐 방식 추론 구축
+            - Docker Swarm 기반 메시지 큐 방식 추론 구축
           - DRF Data Interface/Inference API 개발
           - Data ETL 개발(Python Celery)
           - 학습 데이터 생성/정제, 학습 데이터 생성 툴 개발
@@ -393,19 +403,21 @@ projects:
       - projects/ssg_lens_mobile.jpeg
       - projects/architecture/ssg_lens.png
     link: https://www.dt.co.kr/article/11164365
+    link_label: 언론 보도
     details: |
       언어로 정확히 표현하기 어려운 스타일(예: 하늘하늘한 블라우스)을 카메라 촬영 이미지나 상품 이미지로 검색해 유사 상품을 찾아주는 서비스
         - 📊 성과 :
           - 1억 개 이상 상품 이미지 인덱싱
           - 일 10만 건 이상 검색 쿼리 처리
-        - 유사 이미지 검색, 상품 라벨링
+        - 🧩 주요 기능 :
+          - 유사 이미지 검색, 상품 라벨링
         - 👨🏻‍💻 Role : 백엔드 개발 /2명
           - 시스템/SW 아키텍처 설계
           - Docker Swarm / Elasticsearch / Redis 구축
           - DRF API 개발
           - 학습 데이터 생성/정제/검수
           - 유사도 비교 API 개발
-  - title: SSG.COM 프로젝트
+  - title: SSG.COM 주문·결제·물류 연동 개발
     time: 2013.04 ~ 2017.08
     company: SSG.COM
     skills: Spring Framework, jQuery, Oracle, Netty
@@ -415,6 +427,7 @@ projects:
       - projects/ssg_3.jpeg
       - projects/ssg_4.jpeg
     link: https://www.ssg.com/
+    link_label: 사이트
     details: |
       - 📊 성과 :
         - 기존 이마트/신세계 이커머스 사이트 통합
@@ -426,7 +439,7 @@ projects:
         - 2013.04 ~ 2016.06 (3년 3개월) :
           - 장바구니/결제/프로모션 개발, 신세계 포인트 적립 연동 개발
           - 이벤트/프로모션 등록 개발
-  - title: 웹 개발
+  - title: 공공·유통 웹 서비스 개발(SI)
     time: 2011.05 ~ 2013.04
     company: 바이너리소프트
     skills: Spring, 전자정부프레임워크, jQuery, Oracle
@@ -436,8 +449,8 @@ projects:
       - projects/si_3.jpeg
     details: |
       - 👨🏻‍💻 Role :
-        - 2012.07 ~ 2012.09 (3개월) : 롯데마트 문화센터 강좌 등록 관리자(BO) 웹 서비스 개발
         - 2012.08 ~ 2013.01 (6개월) : 기상청 기상자료 민원 신청·결제·증명서 출력 화면 개발
+        - 2012.07 ~ 2012.09 (3개월) : 롯데마트 문화센터 강좌 등록 관리자(BO) 웹 서비스 개발
         - 2011.12 ~ 2012.05 (6개월) : 근로복지공단 DC/DB/IRP 퇴직연금 등록 BO 화면 개발
         - 2011.05 ~ 2011.12 (8개월) : 기상 관측 데이터 그리드 화면 및 위성 데이터 이미지 조회 화면 개발
           - 일별/월별/연별 기상 데이터 조회·통계, 예보/특보 조회 웹 서비스 개발
@@ -454,8 +467,9 @@ projects:
           - iOS(Objective-C), Android(Java) 앱의 전자서명·해시 기반 애플리케이션 위변조 검증
         - 2010.06 ~ 2011.05 (1년) : KMA(Key Management Appliance)
           - 국내 공인인증서 암·복호화를 위한 OpenSSL(C), Bouncy Castle(Java) 커스터마이징 개발
+      - 📄 관련 특허 출원 2건 : 모바일 애플리케이션 위변조 검증, 모바일 단말 비밀부호 입력
 oss:
-  title: Toy Projects
+  title: Side Projects
   contributions:
   - title: Stock Archive (stock-archive.com)
     link: https://stock-archive.com/
@@ -465,7 +479,7 @@ oss:
     tagline: OpenAI · Gemini · Perplexity API로 AI 뉴스를 매일 자동 수집·요약하고 GitHub Actions로 발행하는 Jekyll 블로그 (2025.10 ~)
 
 publications:
-  title: Papers&patent
+  title: Papers & Patents
   papers:
   - title: 논문 - 스마트폰 환경에서 공인인증서 기반의 전자 금융거래 시스템의 보안방법 및 사용자중심의 개선방안
     link: https://aurora.ajou.ac.kr/handle/2018.oak/8515

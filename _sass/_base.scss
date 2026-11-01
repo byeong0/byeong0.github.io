@@ -1,6 +1,7 @@
 /* ======= Base ======= */
 body {
-  font-family: "Roboto", sans-serif;
+  // Named fallbacks keep PDF (html2canvas) text metrics identical to the page under lang="ko"
+  font-family: "Roboto", Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   color: $text-color-secondary;
   background: $smoky-white;
   font-size: 14px;
@@ -63,6 +64,12 @@ p {
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
+  }
+  .name-en {
+    display: block;
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 700;
   }
   .tagline {
     color: rgba(256, 256, 256, 0.6);
@@ -426,6 +433,22 @@ p {
   margin: 2px 6px 2px 0;
   font-size: 12px;
   line-height: 1.6;
+  color: darken($theme-color, 25%);
+  background: lighten($theme-color, 40%);
+  border: 1px solid lighten($theme-color, 25%);
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+/* ======= Project Link Label ======= */
+.link-label {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 8px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.8;
+  vertical-align: middle;
   color: darken($theme-color, 25%);
   background: lighten($theme-color, 40%);
   border: 1px solid lighten($theme-color, 25%);

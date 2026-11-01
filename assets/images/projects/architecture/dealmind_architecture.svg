@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="background:#ffffff;font-family:'Helvetica Neue',Helvetica,'Apple SD Gothic Neo',Arial,sans-serif" xmlns="http://www.w3.org/2000/svg" width="1400" height="670" viewBox="0 0 1400 670" role="img"
+     aria-label="Dealmind 아키텍처: 딜 소싱 이메일 수집, Airflow AI 분석 파이프라인, 딜 DB와 RAG 인덱스, Target Long List와 Deal AI Chat">
+  <style>
+  .t { font-size: 16px; font-weight: 700; fill: #000; }
+  .g { font-size: 14px; font-weight: 700; fill: #4d4d4d; }
+  .b { font-size: 12.5px; fill: #000; }
+  .l { font-size: 12.5px; fill: #000; }
+  .box { stroke-width: 1.5; }
+  .arrow { stroke: #000; stroke-width: 2; fill: none; }  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- 딜 소싱 이메일 -->
+  <rect class="box" x="40" y="40" width="300" height="120" rx="14" fill="#f5f5f5" stroke="#666666"/>
+  <text class="t" x="190" y="68" text-anchor="middle">딜 소싱 이메일</text>
+  <text class="b" x="190" y="94" text-anchor="middle">M&amp;A 매물 소개 · 투자 의향 메일</text>
+  <text class="b" x="190" y="114" text-anchor="middle">일 1,000건 이상 수신</text>
+  <text class="b" x="190" y="134" text-anchor="middle">본문 · 회사 개요 · 재무 정보</text>
+
+  <!-- 1. 이메일 수집 -->
+  <rect class="box" x="400" y="40" width="280" height="120" rx="14" fill="#ffe6cc" stroke="#d79b00"/>
+  <text class="t" x="540" y="68" text-anchor="middle">1. 이메일 수집</text>
+  <text class="b" x="540" y="94" text-anchor="middle">Power Automate 수집 자동화</text>
+  <text class="b" x="540" y="114" text-anchor="middle">본문 · 발신자 · 수신일 적재</text>
+
+  <!-- 2. AI 분석 파이프라인 -->
+  <rect class="box" x="740" y="40" width="340" height="150" rx="14" fill="#fff2cc" stroke="#d6b656"/>
+  <text class="t" x="910" y="68" text-anchor="middle">2. AI 분석 파이프라인 (Airflow)</text>
+  <text class="b" x="910" y="94" text-anchor="middle">매수 / 매도 / 기타 분류</text>
+  <text class="b" x="910" y="114" text-anchor="middle">Target · 산업(KSIC) · 희망가 · 담당자 추출</text>
+  <text class="b" x="910" y="134" text-anchor="middle">Deal AI Comment (요약 · 시사점) 생성</text>
+  <text class="b" x="910" y="154" text-anchor="middle">RAG용 문서 청크 · 임베딩 생성</text>
+
+  <!-- LLM -->
+  <rect class="box" x="1160" y="250" width="200" height="160" rx="14" fill="#e6d0de" stroke="#9673a6"/>
+  <text class="t" x="1260" y="282" text-anchor="middle">LLM</text>
+  <text class="b" x="1260" y="310" text-anchor="middle">Azure OpenAI</text>
+  <text class="b" x="1260" y="330" text-anchor="middle">LangChain</text>
+  <text class="b" x="1260" y="362" text-anchor="middle">메일 분류 · 정보 추출</text>
+  <text class="b" x="1260" y="382" text-anchor="middle">요약 · RAG 답변 생성</text>
+
+  <!-- 딜 DB 원통 -->
+  <path class="box" d="M810,268 A110,16 0 0 0 1030,268 L1030,400 A110,16 0 0 1 810,400 Z" fill="#f8cecc" stroke="#b85450"/>
+  <ellipse class="box" cx="920" cy="268" rx="110" ry="16" fill="#f8cecc" stroke="#b85450"/>
+  <text class="t" x="920" y="310" text-anchor="middle">딜 DB · 검색 인덱스</text>
+  <text class="b" x="920" y="336" text-anchor="middle">이메일 원문 · 추출 정보 · 코멘트</text>
+  <text class="b" x="920" y="356" text-anchor="middle">RAG 문서 60만 건 이상</text>
+  <text class="b" x="920" y="376" text-anchor="middle">(임베딩 인덱스)</text>
+
+  <!-- 업무 화면 영역 -->
+  <rect x="380" y="450" width="720" height="190" rx="14" fill="none" stroke="#666666" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text class="g" x="588" y="474">Deal 업무 화면 (Next.js · FastAPI · Docker)</text>
+
+  <rect class="box" x="400" y="485" width="320" height="135" rx="14" fill="#e1f5e7" stroke="#82b366"/>
+  <text class="t" x="560" y="513" text-anchor="middle">Target Long List</text>
+  <text class="b" x="560" y="540" text-anchor="middle">매수 / 매도 탭 · 산업 · 희망가 · 담당자 필터</text>
+  <text class="b" x="560" y="560" text-anchor="middle">추출 정보 ↔ 이메일 원문 대조</text>
+  <text class="b" x="560" y="580" text-anchor="middle">검색 · Excel 다운로드</text>
+
+  <rect class="box" x="760" y="485" width="320" height="135" rx="14" fill="#e1f5e7" stroke="#82b366"/>
+  <text class="t" x="920" y="513" text-anchor="middle">Deal AI Chat</text>
+  <text class="b" x="920" y="540" text-anchor="middle">딜 DB 검색 + RAG 답변</text>
+  <text class="b" x="920" y="560" text-anchor="middle">웹 검색(SearXNG) · 딥서치 · 파일 첨부</text>
+  <text class="b" x="920" y="580" text-anchor="middle">추론 과정(Reasoning) 표시</text>
+
+  <!-- 사용자 -->
+  <rect class="box" x="40" y="485" width="280" height="135" rx="14" fill="#dae8fc" stroke="#6c8ebf"/>
+  <text class="t" x="180" y="513" text-anchor="middle">Deal 본부 담당자</text>
+  <text class="b" x="180" y="540" text-anchor="middle">매물 목록 검토 · 필터링</text>
+  <text class="b" x="180" y="560" text-anchor="middle">이메일 원문 대조 · 코멘트 확인</text>
+  <text class="b" x="180" y="580" text-anchor="middle">AI Chat으로 매물 · 시장 질의</text>
+
+  <!-- 화살표 -->
+  <line class="arrow" x1="340" y1="100" x2="400" y2="100" marker-end="url(#arrow)"/>
+  <text class="l" x="370" y="91" text-anchor="middle">수신</text>
+
+  <line class="arrow" x1="680" y1="100" x2="740" y2="100" marker-end="url(#arrow)"/>
+  <text class="l" x="710" y="91" text-anchor="middle">적재</text>
+
+  <path class="arrow" d="M1080,115 L1260,115 L1260,250" marker-end="url(#arrow)"/>
+  <text class="l" x="1272" y="190">분류 · 추출 · 요약</text>
+
+  <line class="arrow" x1="920" y1="190" x2="920" y2="252" marker-end="url(#arrow)"/>
+  <text class="l" x="932" y="228">저장 · 인덱싱</text>
+
+  <path class="arrow" d="M810,330 L560,330 L560,485" marker-end="url(#arrow)"/>
+  <text class="l" x="572" y="410">목록 · 상세 조회</text>
+
+  <line class="arrow" x1="920" y1="416" x2="920" y2="485" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="l" x="932" y="440">RAG 검색</text>
+
+  <path class="arrow" d="M1080,552 L1260,552 L1260,410" marker-end="url(#arrow)"/>
+  <text class="l" x="1272" y="490">답변 생성</text>
+
+  <line class="arrow" x1="320" y1="552" x2="380" y2="552" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="l" x="350" y="543" text-anchor="middle">사용</text>
+</svg>

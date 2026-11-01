@@ -7,7 +7,7 @@
         <mxCell id="214" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;strokeColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=1;fillColor=#FFFFFF;" value="" vertex="1">
           <mxGeometry height="740" width="1064" x="20" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="215" parent="1" style="swimlane;whiteSpace=wrap;html=1;swimlaneLine=1;swimlaneHead=1;allowArrows=1;container=0;expand=1;fillStyle=solid;fillColor=#FFFFFF;separatorColor=none;swimlaneFillColor=default;" value="Container Ochestration" vertex="1">
+        <mxCell id="215" parent="1" style="swimlane;whiteSpace=wrap;html=1;swimlaneLine=1;swimlaneHead=1;allowArrows=1;container=0;expand=1;fillStyle=solid;fillColor=#FFFFFF;separatorColor=none;swimlaneFillColor=default;" value="Container Orchestration" vertex="1">
           <mxGeometry height="560" width="830" x="184" y="150" as="geometry" />
         </mxCell>
         <mxCell id="217" parent="215" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;flipV=1;flipH=1;dashed=1;swimlaneFillColor=default;" value="Monitoring" vertex="1">
@@ -125,7 +125,7 @@
         <mxCell id="249" parent="217" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Schedule&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Batch&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="80" x="506" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="250" parent="217" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Distribute Task&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Work&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;(Inference)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="250" parent="217" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Distributed Task&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;&lt;b&gt;(Inference)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="80" x="635.35" y="21" as="geometry" />
         </mxCell>
         <mxCell id="216" edge="1" parent="217" source="220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" target="247">

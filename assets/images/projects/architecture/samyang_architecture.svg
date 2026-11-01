@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg style="background:#ffffff;font-family:'Helvetica Neue',Helvetica,'Apple SD Gothic Neo',Arial,sans-serif" xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img"
+<svg style="background:#ffffff;font-family:'Helvetica Neue',Helvetica,'Apple SD Gothic Neo',Arial,sans-serif" xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" role="img"
      aria-label="패키징 도안 AI 일치검사 파이프라인: 의뢰서와 도안의 멀티모달 추출, 정규화 전처리, GPT 기반 항목 매핑과 3단계 검수, 신뢰도 기반 Human-in-the-Loop 판정">
   <style>
   .t { font-size: 16px; font-weight: 700; fill: #000; }
@@ -94,7 +94,7 @@
 
   <!-- 아키텍트 투입 범위 (정확도 개선) -->
   <rect x="86" y="386" width="1228" height="518" rx="18" fill="none" stroke="#b85450" stroke-width="2" stroke-dasharray="9,6"/>
-  <text class="acc" x="1300" y="378" text-anchor="end">아키텍트 투입 범위: 정확도 개선 (정규화 · 매핑 · 신뢰도 기반 판정)</text>
+  <text class="acc" x="1300" y="926" text-anchor="end">아키텍트 투입 범위: 정확도 개선 (정규화 · 매핑 · 신뢰도 기반 판정)</text>
 
   <!-- 화살표: 입력 → 추출 -->
   <line class="arrow" x1="340" y1="140" x2="250" y2="220" marker-end="url(#arrow)"/>
@@ -125,7 +125,7 @@
 
   <!-- 3단계 검수 → HITL -->
   <line class="arrow" x1="960" y1="690" x2="560" y2="760" marker-end="url(#arrow)"/>
-  <text class="l" x="790" y="740" text-anchor="middle">① ② ③ 판별 결과 + 신뢰도 점수</text>
+  <text class="l" x="700" y="712" text-anchor="middle">① ② ③ 판별 결과 + 신뢰도 점수</text>
 
   <!-- HITL → 산출물 -->
   <line class="arrow" x1="740" y1="815" x2="820" y2="815" marker-end="url(#arrow)"/>

@@ -4,7 +4,7 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="&amp;nbsp;SSG.COM Brain Container Ochestration (Docker Swarm)" style="outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;strokeColor=#333333;fillColor=none;verticalAlign=top;align=left;fontColor=#000000;dashed=1;spacingTop=3;dashPattern=1 4;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="2" value="&amp;nbsp;SSG.COM Brain Container Orchestration (Docker Swarm)" style="outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;strokeColor=#333333;fillColor=none;verticalAlign=top;align=left;fontColor=#000000;dashed=1;spacingTop=3;dashPattern=1 4;strokeWidth=2;" vertex="1" parent="1">
                     <mxGeometry x="-807" y="-685" width="1330" height="822" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Object storage" style="outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;strokeColor=#000000;fillColor=none;verticalAlign=top;align=left;fontColor=#000000;dashed=1;spacingTop=3;dashPattern=1 4;strokeWidth=2;" vertex="1" parent="1">
